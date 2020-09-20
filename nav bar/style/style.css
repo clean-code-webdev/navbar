@@ -1,0 +1,568 @@
+/* --- Google Fonts --- */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: 0;
+          box-sizing: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  width: 100vw;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+  letter-spacing: 0.1rem;
+  background: #191919;
+  color: white;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+nav {
+  background: #242424;
+}
+
+nav ul {
+  width: 100%;
+  padding: 3rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul li {
+  padding: 2rem 5%;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  color: lightgreen;
+}
+
+nav#left,
+nav#right {
+  width: 12rem;
+  height: 100%;
+  position: fixed;
+  top: 0vh;
+}
+
+nav#left ul,
+nav#right ul {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+nav#top,
+nav#bottom {
+  width: 100%;
+  height: 12rem;
+  position: fixed;
+  left: 0;
+}
+
+nav#top ul,
+nav#bottom ul {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: auto;
+}
+
+/* --- left nav --- */
+nav#left {
+  left: -12rem;
+}
+
+.show-nav-left {
+  -webkit-animation: show-nav-left 0.4s ease-in-out forwards;
+          animation: show-nav-left 0.4s ease-in-out forwards;
+}
+
+@-webkit-keyframes show-nav-left {
+  from {
+    left: -12rem;
+  }
+  to {
+    left: 0rem;
+  }
+}
+
+@keyframes show-nav-left {
+  from {
+    left: -12rem;
+  }
+  to {
+    left: 0rem;
+  }
+}
+
+.hide-nav-left {
+  -webkit-animation: hide-nav-left 0.2s ease-in-out forwards;
+          animation: hide-nav-left 0.2s ease-in-out forwards;
+}
+
+@-webkit-keyframes hide-nav-left {
+  from {
+    left: 0rem;
+  }
+  to {
+    left: -12rem;
+  }
+}
+
+@keyframes hide-nav-left {
+  from {
+    left: 0rem;
+  }
+  to {
+    left: -12rem;
+  }
+}
+
+/* --- right nav --- */
+nav#right {
+  right: -12rem;
+}
+
+.show-nav-right {
+  -webkit-animation: show-nav-right 0.4s ease-in-out forwards;
+          animation: show-nav-right 0.4s ease-in-out forwards;
+}
+
+@-webkit-keyframes show-nav-right {
+  from {
+    right: -12rem;
+  }
+  to {
+    right: 0rem;
+  }
+}
+
+@keyframes show-nav-right {
+  from {
+    right: -12rem;
+  }
+  to {
+    right: 0rem;
+  }
+}
+
+.hide-nav-right {
+  -webkit-animation: hide-nav-right 0.2s ease-in-out forwards;
+          animation: hide-nav-right 0.2s ease-in-out forwards;
+}
+
+@-webkit-keyframes hide-nav-right {
+  from {
+    right: 0rem;
+  }
+  to {
+    right: -12rem;
+  }
+}
+
+@keyframes hide-nav-right {
+  from {
+    right: 0rem;
+  }
+  to {
+    right: -12rem;
+  }
+}
+
+/* --- top nav --- */
+nav#top {
+  top: -12rem;
+}
+
+.show-nav-top {
+  -webkit-animation: show-nav-top 0.4s ease-in-out forwards;
+          animation: show-nav-top 0.4s ease-in-out forwards;
+}
+
+@-webkit-keyframes show-nav-top {
+  from {
+    top: -12rem;
+  }
+  to {
+    top: 0rem;
+  }
+}
+
+@keyframes show-nav-top {
+  from {
+    top: -12rem;
+  }
+  to {
+    top: 0rem;
+  }
+}
+
+.hide-nav-top {
+  -webkit-animation: hide-nav-top 0.2s ease-in-out forwards;
+          animation: hide-nav-top 0.2s ease-in-out forwards;
+}
+
+@-webkit-keyframes hide-nav-top {
+  from {
+    top: 0rem;
+  }
+  to {
+    top: -12rem;
+  }
+}
+
+@keyframes hide-nav-top {
+  from {
+    top: 0rem;
+  }
+  to {
+    top: -12rem;
+  }
+}
+
+/* --- bottom nav --- */
+nav#bottom {
+  bottom: -12rem;
+}
+
+.show-nav-bottom {
+  -webkit-animation: show-nav-bottom 0.4s ease-in-out forwards;
+          animation: show-nav-bottom 0.4s ease-in-out forwards;
+}
+
+@-webkit-keyframes show-nav-bottom {
+  from {
+    bottom: -12rem;
+  }
+  to {
+    bottom: 0rem;
+  }
+}
+
+@keyframes show-nav-bottom {
+  from {
+    bottom: -12rem;
+  }
+  to {
+    bottom: 0rem;
+  }
+}
+
+.hide-nav-bottom {
+  -webkit-animation: hide-nav-bottom 0.2s ease-in-out forwards;
+          animation: hide-nav-bottom 0.2s ease-in-out forwards;
+}
+
+@-webkit-keyframes hide-nav-bottom {
+  from {
+    bottom: 0rem;
+  }
+  to {
+    bottom: -12rem;
+  }
+}
+
+@keyframes hide-nav-bottom {
+  from {
+    bottom: 0rem;
+  }
+  to {
+    bottom: -12rem;
+  }
+}
+
+/* --- container --- */
+#wrapper {
+  width: 80%;
+  height: 100vh;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* --- nav --- */
+}
+
+#wrapper #button {
+  border: 0.2rem solid white;
+  border-radius: 0.2rem;
+  margin-bottom: 5rem;
+  width: 10rem;
+  outline: none;
+}
+
+#wrapper #button #icon {
+  -webkit-box-shadow: 0.3rem 0.3rem 10rem #f1f3f6, -0.3rem -0.3rem 10rem #f1f3f6;
+          box-shadow: 0.3rem 0.3rem 10rem #f1f3f6, -0.3rem -0.3rem 10rem #f1f3f6;
+  background: black;
+  cursor: pointer;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  width: 100%;
+  padding: 1rem 0;
+  text-transform: uppercase;
+}
+
+#wrapper #options ul {
+  width: 90vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+#wrapper #options ul li {
+  list-style: none;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 3rem 0 0;
+}
+
+#wrapper #options ul li:hover {
+  cursor: pointer;
+}
+
+#wrapper #options ul li:first-of-type {
+  color: lightgreen;
+}
+
+#wrapper .container {
+  width: 95%;
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  nav ul li {
+    font-size: 1.8rem;
+  }
+  nav#left,
+  nav#right {
+    width: 20rem;
+  }
+  nav#top,
+  nav#bottom {
+    height: 10rem;
+  }
+  /* --- left nav --- */
+  nav#left {
+    left: -20rem;
+  }
+  @-webkit-keyframes show-nav-left {
+    from {
+      left: -20rem;
+    }
+    to {
+      left: 0rem;
+    }
+  }
+  @keyframes show-nav-left {
+    from {
+      left: -20rem;
+    }
+    to {
+      left: 0rem;
+    }
+  }
+  @-webkit-keyframes hide-nav-left {
+    from {
+      left: 0rem;
+    }
+    to {
+      left: -20rem;
+    }
+  }
+  @keyframes hide-nav-left {
+    from {
+      left: 0rem;
+    }
+    to {
+      left: -20rem;
+    }
+  }
+  /* --- right nav --- */
+  nav#right {
+    right: -20rem;
+  }
+  @-webkit-keyframes show-nav-right {
+    from {
+      right: -20rem;
+    }
+    to {
+      right: 0rem;
+    }
+  }
+  @keyframes show-nav-right {
+    from {
+      right: -20rem;
+    }
+    to {
+      right: 0rem;
+    }
+  }
+  @-webkit-keyframes hide-nav-right {
+    from {
+      right: 0rem;
+    }
+    to {
+      right: -20rem;
+    }
+  }
+  @keyframes hide-nav-right {
+    from {
+      right: 0rem;
+    }
+    to {
+      right: -20rem;
+    }
+  }
+  /* --- top nav --- */
+  nav#top {
+    top: -20rem;
+  }
+  @-webkit-keyframes show-nav-top {
+    from {
+      top: -20rem;
+    }
+    to {
+      top: 0rem;
+    }
+  }
+  @keyframes show-nav-top {
+    from {
+      top: -20rem;
+    }
+    to {
+      top: 0rem;
+    }
+  }
+  @-webkit-keyframes hide-nav-top {
+    from {
+      top: 0rem;
+    }
+    to {
+      top: -10rem;
+    }
+  }
+  @keyframes hide-nav-top {
+    from {
+      top: 0rem;
+    }
+    to {
+      top: -10rem;
+    }
+  }
+  /* --- bottom nav --- */
+  nav#bottom {
+    bottom: -10rem;
+  }
+  @-webkit-keyframes show-nav-bottom {
+    from {
+      bottom: -10rem;
+    }
+    to {
+      bottom: 0rem;
+    }
+  }
+  @keyframes show-nav-bottom {
+    from {
+      bottom: -10rem;
+    }
+    to {
+      bottom: 0rem;
+    }
+  }
+  @-webkit-keyframes hide-nav-bottom {
+    from {
+      bottom: 0rem;
+    }
+    to {
+      bottom: -10rem;
+    }
+  }
+  @keyframes hide-nav-bottom {
+    from {
+      bottom: 0rem;
+    }
+    to {
+      bottom: -10rem;
+    }
+  }
+  /* --- container --- */
+  #wrapper {
+    /* --- nav --- */
+  }
+  #wrapper #button {
+    width: 15rem;
+  }
+  #wrapper #button #icon {
+    background: black;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    width: 100%;
+    padding: 2rem 0;
+    text-transform: uppercase;
+  }
+  #wrapper #options ul {
+    width: 50rem;
+  }
+  #wrapper #options ul li {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  nav ul li a {
+    font-size: 2rem;
+  }
+  #wrapper #options ul {
+    width: 50rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+/*# sourceMappingURL=style.css.map */
